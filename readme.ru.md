@@ -61,7 +61,7 @@ Chrome Extensions Box `v0.1`
 		<!--Сначала подключаем локализатор-->
 		<script src="js/helpers/localization.js"></script>
 
-		<!--Остальные скрипты->
+		<!--Остальные скрипты-->
 		<script src="js/options.js"></script>
 	</head>
 
@@ -69,7 +69,7 @@ Chrome Extensions Box `v0.1`
 	    <header>
 
 			<strong>{{extDescr}}</strong>
-			<!--Можно использовать в атрибутах->
+			<!--Можно использовать в атрибутах-->
 	        <img src="img/ext_icons/48.png" title="{{extName}}">
 	        
 	    </header>	
