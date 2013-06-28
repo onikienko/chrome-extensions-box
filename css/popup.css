@@ -1,0 +1,35 @@
+body {
+    width: 450px;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-top: 36px;
+}
+
+header {
+    font-size: 14px;
+    background-color: #F1F1F1;
+    padding: 6px;
+    border-bottom: 1px solid #dddddd;
+    box-shadow: 0 3px 6px #a9a9a9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+#window_actions {
+    float: right;
+}
+
+#window_actions a {
+    margin: 0 0 0 6px;
+    text-decoration: none;
+    color: #a9a9a9;
+}
+
+#window_actions a:hover {
+    text-shadow: 1px 1px 1px #393939, 0 0 1em #dddddd;
+}

@@ -1,0 +1,156 @@
+// NOTE: JSON standart does not allow comments. Remove them
+//Manifest Files - http://developer.chrome.com/extensions/manifest.html
+{
+    "name": "__MSG_extName__",
+    "description": "__MSG_extDescr__",
+    "version": "0.1",
+    "manifest_version": 2,
+
+    // v. 22 - Alarms API and eventPage
+    // v. 20 - storage API
+    // v. 19 - browsing data API,  top sites API
+    //  http://developer.chrome.com/extensions/whats_new.html
+    "minimum_chrome_version": "25",
+    "default_locale": "en",
+    "icons": {
+        "16": "img/ext_icons/16.png",
+        "48": "img/ext_icons/48.png",
+        "128": "img/ext_icons/128.png"
+    },
+
+    //#################################################
+    // Pick one (or none). Do NOT leave both of them
+    "browser_action": {
+        "default_icon": {
+            "19": "img/ext_icons/19.png",
+            "38": "img/ext_icons/38.png"
+        },
+        "default_title": "__MSG_extName__",
+        "default_popup": "popup.html"
+    },
+    "page_action": {
+        "default_icon": {
+            "19": "img/ext_icons/19.png",
+            "38": "img/ext_icons/38.png"
+        },
+        "default_title": "__MSG_extName__",
+        "default_popup": "popup.html"
+    },
+    //#################################################
+
+
+    "background": {
+        "scripts": ["js/background.js"],
+        // it's eventPage( http://developer.chrome.com/extensions/event_pages.html )
+        // Use 'true' for backgroundPage
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            //    http://developer.chrome.com/extensions/match_patterns.html
+            "matches": ["http://www.google.com/*"],
+            "css": ["css/content_script.css"],
+            "js": ["js/content_script.js"]
+        }
+    ],
+    "options_page": "options.html",
+
+
+    "chrome_url_overrides": {
+        "pageToOverride": "myPage.html"
+    },
+
+    //   http://developer.chrome.com/extensions/contentSecurityPolicy.html
+    "content_security_policy": "policyString",
+
+    "file_browser_handlers": [
+        {} // This API works only on Chrome OS
+    ],
+
+    // If you distribute your extension using the Chrome Web Store, the homepage URL defaults to the extension's own page
+    "homepage_url": "http://path/to/homepage",
+
+    // Default  "spanning".    http://developer.chrome.com/extensions/manifest.html#incognito
+    "incognito": "spanning" or "split",
+
+    "intents": {
+        //  http://developer.chrome.com/extensions/manifest.html#intents
+    },
+
+    //  http://developer.chrome.com/extensions/manifest.html#key
+    "key": "publicKey",
+
+    "nacl_modules": [
+        {
+            "path": "OpenOfficeViewer.nmf",
+            "mime_type": "application/vnd.oasis.opendocument.spreadsheet"
+        }
+    ],
+
+    //   http://developer.chrome.com/extensions/manifest.html#offline_enabled
+    "offline_enabled": false,
+
+    "omnibox": {
+        //    http://developer.chrome.com/extensions/omnibox.html
+        "keyword": "aString"
+    },
+    "plugins": [
+        {
+            "path": "content_plugin.dll",
+            "public": true
+        },
+        {
+            "path": "extension_plugin.dll"
+        }
+    ],
+
+    "requirements": {
+        //    http://developer.chrome.com/extensions/manifest.html#requirements
+    },
+
+    //If you're hosting your own extension or app, you need to add the "update_url"
+    //  http://developer.chrome.com/extensions/autoupdate.html
+    "update_url": "http://path/to/updateInfo.xml",
+
+    //  http://developer.chrome.com/extensions/manifest.html#web_accessible_resources
+    "web_accessible_resources": [
+        "img/ext_icons/16.png"
+    ],
+
+    "sandbox": {
+        //  http://developer.chrome.com/extensions/manifest.html#sandbox
+    },
+
+    //############################################################################
+    //  http://developer.chrome.com/extensions/declare_permissions.html
+    "permissions": [
+        "http://*.google.com/*",
+//        "activeTab",
+        "background",
+        "bookmarks",
+        "chrome://favicon/",
+        "clipboardRead",
+        "clipboardWrite",
+        "contentSettings",
+        "contextMenus",
+        "cookies",
+//        "experimental",
+        "fileBrowserHandler",
+        "geolocation",
+        "history",
+        "idle",
+        "management",
+        "notifications",
+        "privacy",
+        "proxy",
+        "storage",
+        "tabs",
+        "topSites",
+        "tts",
+        "ttsEngine",
+        "unlimitedStorage",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}

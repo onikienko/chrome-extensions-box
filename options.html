@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{extName}}</title>
+    <link rel="stylesheet" type="text/css" href="css/options.css">
+    <link rel="stylesheet" type="text/css" href="lib/jsTabs/tabs.css">
+</head>
+<body>
+<div id="page">
+    <header>
+        <img src="img/ext_icons/48.png" title="{{extDescr}}" width="48" height="48">
+        <strong>{{extName}}</strong>
+    </header>
+
+    <section id="main_tabs" class="tabs">
+        <ul class="tabs_nav">
+            <li><a href="#main">{{o_tabs_main}}</a></li>
+            <li><a href="#help">{{o_tabs_help}}</a></li>
+        </ul>
+
+        <div class="tabs_content">
+
+            <div id="main">
+            </div>
+
+            <div id="help">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">by <a href="#">...</a></p>
+    </footer>
+</div>
+
+<script src="js/helpers/localizer.js"></script>
+<script src="lib/jsTabs/tabs.js"></script>
+
+<script src="js/storage.js"></script>
+<script src="js/helpers/quick_options.js"></script>
+<!--<script src="lib/jquery.min.js"></script>-->
+<script src="js/options.js"></script>
+
+</body>
+</html>

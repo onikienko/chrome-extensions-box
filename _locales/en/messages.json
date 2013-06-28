@@ -1,0 +1,36 @@
+{
+    "extName": {
+        "message": "New Extension",
+        "description": "do not translate extension name"
+    },
+    "extDescr": {
+        "message": "Extension's description",
+        "description": "Extension's description"
+    },
+
+    "o_tabs_help": {
+        "message": "Help",
+        "description": "Tab name. Prefix 'o_' for options page"
+    },
+    "o_tabs_main": {
+        "message": "Main",
+        "description": "Tab name"
+    },
+    "o_error": {
+        "message": "Error",
+        "description": "Error message"
+    },
+    "o_saved": {
+        "message": "Saved",
+        "description": "Ok message"
+    },
+
+    "p_optionsBtn": {
+        "message": "Options",
+        "description":"Button hint. Prefix 'p_' for popup page"
+    },
+    "p_helpBtn": {
+        "message": "Help",
+        "description": "Button hint"
+    }
+}
