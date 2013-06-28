@@ -113,7 +113,7 @@ Chrome Extensions Box `v0.1`
 
 ```
 
-Если в `message.json` не найдется запрашиваемого свойства, то вернется исходная строка.
+Если в `message.json` не найдется запрашиваемого свойства, или значение равно пустой строке, то вернется исходная строка.
 
 Такой подход работает для HTML. В скриптах можно использовать функцию `chrome.i18n.getMessage(messageName, substitutions)`.  Можно прочитать [тут](https://developer.chrome.com/extensions/i18n.html) и о `substitutions` - [здесь](https://developer.chrome.com/extensions/i18n-messages.html)
 
