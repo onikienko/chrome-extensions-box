@@ -40,7 +40,7 @@
 
 
     "background": {
-        "scripts": ["js/background.js"],
+        "scripts": ["js/storage.js", "js/background.js"],
         // it's eventPage( http://developer.chrome.com/extensions/event_pages.html )
         // Use 'true' for backgroundPage
         "persistent": false
