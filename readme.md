@@ -17,7 +17,7 @@ Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 Installation
 ------------
 
-Choose one:
+Variants:
  
 - Clone repo: `git clone git://github.com/onikienko/chrome-extensions-box.git my-ext-name`
 - Download [last zipped version](https://github.com/onikienko/chrome-extensions-box/archive/master.zip)
@@ -68,3 +68,34 @@ Run:
 
 from `build` folder. New build will be create in `build\releases` folder.
 
+By default builder will minify javaScript files from `js` folder with [UglifyJS](http://marijnhaverbeke.nl/uglifyjs) (online). For build without minification run
+
+	build.py -m
+
+or edit `build.json` from builder folder. (See below)
+
+You can set reminder in `build.json`. For example: "off debug", "check TODO" etc. Before make build script will show you message  and will wait your command.
+
+`build.json`:
+
+```javaScript
+
+	{
+	    "exclude": [".*", "build"],  // in Unix shell style
+
+	    "reminder": "",    // empty string - without reminder
+
+	    "minify": {			
+	        "dirs": ["../js"],  // relative path from builder folder. empty string - without minification
+	        "exclude": ["*.min.js"]  
+	    },
+
+	    "changelog": {
+			// changelog file will be create in build/releases folder
+			// 	script will write version number and timestamp to this file	
+	        "filename": "changelog.txt", // empty string - without changelog
+	        "datetimeformat": "%d.%m.%Y %H:%M" // empty string - without timestamp
+	    }
+	}
+
+```
