@@ -246,3 +246,52 @@ Chrome Extensions Box `v0.1`
 ```
 
 **В пути до папки `build` не должно быть кириллицы**
+
+
+
+Структура проекта
+-----------------
+
+	[_locales]
+		[en]
+			message.json
+		[ru]	
+			message.json
+
+	[build]	// в этой папке находится сборщик расширения, а также будут храниться все собранные билды
+		build.json	// конфигурация сборщика расширения
+		build.py	// сборщик расширения
+
+	[css]
+		content_script.css
+		options.css
+		popup.css
+
+	[img]
+		[ext_icons]	// иконки-заглушки. все типоразмеры
+			16.png
+			19.png
+			38.png
+			48.png
+			128.png
+
+	[js]
+		[helpers]
+			localizer.js		// хелпер интернационализации
+			quick_options.js	// быстрое создание страницы настроек расширения
+		background.js
+		storage.js	// 	дефолтные настройки расширения, а также тип используемого хранилища (sync или local)
+		content_script.js
+		options.js
+		popup.js
+
+	[lib]
+		[jsTabs]	// простые табы https://github.com/onikienko/jsTabs/
+			tabs.css
+			tabs.js
+		jquery.min.js	// последняя стабильная версия jQuery (ветка 2.X)
+	options.html
+	popup.html
+	manifest.json
+
+
