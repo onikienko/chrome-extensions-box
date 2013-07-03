@@ -24,7 +24,7 @@ Chrome Extensions Box `v0.1`
  3. [Страница настроек](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#23-)
  4. [Табы](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#24-)
  5. [Сборщик](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#25-)
-3. [Структура проекта](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#3-)
+3. [Структура проекта](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#3--)
 
 
 1. Установка
@@ -259,7 +259,7 @@ Chrome Extensions Box `v0.1`
 
 
 3. Структура проекта
------------------
+--------------------
 
 	[_locales]
 		[en]
