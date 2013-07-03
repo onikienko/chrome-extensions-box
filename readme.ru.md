@@ -17,13 +17,13 @@ Chrome Extensions Box `v0.1`
 Простое расширение, демонстрирующее возможности данного набора - [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
 
-1. Установка
-2. Использование 
- 1. Старт
- 2. Интернационализация
- 3. Страница настроек
- 4. Сборщик
-3. Структура проекта
+1. [Установка](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#1-)
+2. [Использование](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#2-) 
+ 1. [Старт](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#21-)
+ 2. [Интернационализация](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#22-)
+ 3. [Страница настроек](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#23-)
+ 4. [Сборщик](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#24-)
+3. [Структура проекта](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#3-)
 
 
 1. Установка
