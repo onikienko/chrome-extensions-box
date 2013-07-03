@@ -17,9 +17,17 @@ Chrome Extensions Box `v0.1`
 Простое расширение, демонстрирующее возможности данного набора - [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
 
+1. Установка
+2. Использование 
+ 1. Старт
+ 2. Интернационализация
+ 3. Страница настроек
+ 4. Сборщик
+3. Структура проекта
 
-Установка
----------
+
+1. Установка
+------------
 Варианты установки:
  
 - Клонировать репозиторий: `git clone git://github.com/onikienko/chrome-extensions-box.git my-ext-name`
@@ -27,10 +35,10 @@ Chrome Extensions Box `v0.1`
 
 	
 	
-Использование
--------------
+2. Использование
+----------------
 
-### Старт ###
+### 2.1 Старт ###
 
 1. Переименуйте папку проекта (имя создаваемого расширения подойдет, но без кириллицы).
 2. Отредактируйте файл `manifest.json` удалив все лишнее. В `permissions` оставьте разрешение `storage` - для хранения настроек используется это API ([chrome.storage](https://developer.chrome.com/extensions/storage.html)).  Комментарии также нужно удалить, `JSON` не поддерживает комментарии.
@@ -40,7 +48,7 @@ Chrome Extensions Box `v0.1`
 Использование хелпера инициализации и страницы настроек можно посмотреть в примере расширения [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). Файл `options.html`.
 
 
-### Интернационализация ###
+### 2.2 Интернационализация ###
 
 Файл хелпера - `js/helpers/localizer.js`. 
 
@@ -118,7 +126,7 @@ Chrome Extensions Box `v0.1`
 Такой подход работает для HTML. В скриптах можно использовать функцию `chrome.i18n.getMessage(messageName, substitutions)`.  Можно прочитать [тут](https://developer.chrome.com/extensions/i18n.html) и о `substitutions` - [здесь](https://developer.chrome.com/extensions/i18n-messages.html)
 
 
-### Страница настроек (Options page) ###
+### 2.3 Страница настроек (Options page) ###
 
 Файл хелпера - `js/helpers/quick_options.js`.
 
@@ -178,7 +186,7 @@ Chrome Extensions Box `v0.1`
 В демо расширении [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo) можно посмотреть использование всех типов элементов. См. файлы `options.html` и `js/storage.js`.
 
 
-### Табы ###
+### 2.4 Табы ###
 
 Расположены - `lib/jsTabs`
 
@@ -189,7 +197,7 @@ Chrome Extensions Box `v0.1`
 [Пример](http://sbox.pp.ua/jstabs/demo.html)
 
 
-### Сборщик ###
+### 2.5 Сборщик ###
 
 **Подготавливает и упаковывает файлы расширения в `zip` для публикации в Chrome Store**
 
@@ -249,7 +257,7 @@ Chrome Extensions Box `v0.1`
 
 
 
-Структура проекта
+3. Структура проекта
 -----------------
 
 	[_locales]
