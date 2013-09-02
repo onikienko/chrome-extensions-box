@@ -17,14 +17,14 @@ Chrome Extensions Box `v0.1`
 Простое расширение, демонстрирующее возможности данного набора - [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
 
-1. [Установка](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#1-)
-2. [Использование](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#2-) 
- 1. [Старт](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#21-)
- 2. [Интернационализация](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#22-)
- 3. [Страница настроек](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#23-)
- 4. [Табы](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#24-)
- 5. [Сборщик](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#25-)
-3. [Структура проекта](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#3--)
+1. [Установка](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#1-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0)
+2. [Использование](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#2-%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) 
+ 1. [Старт](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#21-%D0%A1%D1%82%D0%B0%D1%80%D1%82)
+ 2. [Интернационализация](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#22-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+ 3. [Страница настроек](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#23-%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA-options-page)
+ 4. [Табы](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#24-%D0%A2%D0%B0%D0%B1%D1%8B)
+ 5. [Сборщик](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#25-%D0%A1%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA)
+3. [Структура проекта](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md#3-%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
 
 
 1. Установка
