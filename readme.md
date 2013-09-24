@@ -11,7 +11,7 @@ Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 - starter icons
 - simple javaScript tabs
 - extension builder (automation package creation)
-- written with no jQuery (but last jQuery 2.x attached) 
+- written with no jQuery (but jQuery 2.x attached) 
 
 
 Installation
@@ -20,7 +20,7 @@ Installation
 Variants:
  
 - Clone repo: `git clone git://github.com/onikienko/chrome-extensions-box.git my-ext-name`
-- Download [last zipped version](https://github.com/onikienko/chrome-extensions-box/archive/master.zip)
+- Download [latest zipped version](https://github.com/onikienko/chrome-extensions-box/archive/master.zip)
 
 
 
