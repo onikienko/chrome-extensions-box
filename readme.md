@@ -13,6 +13,12 @@ Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 - extension builder (automation package creation)
 - written with no jQuery (but jQuery 2.x attached) 
 
+Extensions written with Chrome Extensions Box:
+
+- [tabHamster](https://github.com/onikienko/TabHamster)
+
+A simple extension [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). Do nothing but demonstrates how Chrome Extensions Box works.
+
 
 Installation
 ------------
@@ -27,6 +33,13 @@ Variants:
 Usage
 -----
 
+### Start ###
+
+1. Edit `manifest.json` file. Do not remove `storage permissions` - Chrome Extensons Box uses this API to save settings ([chrome.storage](https://developer.chrome.com/extensions/storage.html)). `JSON` does not support comments. Del them.
+2. Del `_locales` folder if internationalization is not planned and edit the properties of `manifest.json` `name` and `description`. Better yet, leave the internationalization support. Chrome Extensions Box has a helper simplifies the process.
+3. Edit `js / storage.js` file specifying the type of storage that will be used. 
+
+Look at [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
 
 ### Internationalization ###

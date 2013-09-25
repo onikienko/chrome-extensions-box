@@ -14,6 +14,11 @@ Chrome Extensions Box `v0.1`
 - сборщик расширений (упаковка расширений для публикации в Магазине Chrome)
 - написано на чистом javaScript без jQuery и других библиотек (jQuery 2.x включен в сборку)
 
+
+Расширения использующие Chrome Extensions Box:
+
+- [tabHamster](https://github.com/onikienko/TabHamster)
+
 Простое расширение, демонстрирующее возможности данного набора - [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
 
@@ -46,7 +51,7 @@ Chrome Extensions Box `v0.1`
 3. Если интернационализация не планируется - удалите папку `_locales` и отредактируйте в `manifest.json` свойства `name` и `description` (по умолчанию они заполнены с учетом локализации). Лучше, все таки, оставить поддержку интернационализации. В наборе есть хелпер упрощающий этот процесс.
 4. Отредактируйте файл `js/storage.js` указав тип хранилища, которое будет использоваться а также все настройки расширения по умолчанию (подробности далее) 
 
-Использование хелпера инициализации и страницы настроек можно посмотреть в примере расширения [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). Файл `options.html`.
+Использование хелпера интернационализации и страницы настроек можно посмотреть в примере расширения [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). Файл `options.html`.
 
 
 ### 2.2 Интернационализация ###
