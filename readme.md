@@ -37,7 +37,7 @@ Usage
 
 1. Edit `manifest.json` file. Do not remove `storage permissions` - Chrome Extensons Box uses this API to save settings ([chrome.storage](https://developer.chrome.com/extensions/storage.html)). `JSON` does not support comments. Del them.
 2. Del `_locales` folder if internationalization is not planned and edit the properties of `manifest.json` `name` and `description`. Better yet, leave the internationalization support. Chrome Extensions Box has a helper simplifies the process.
-3. Edit `js / storage.js` file specifying the type of storage that will be used. 
+3. Edit `js/storage.js` file specifying the type of storage that will be used. 
 
 Look at [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
@@ -79,7 +79,7 @@ Run:
 
 	build.py
 
-from `build` folder. New build will be create in `build\releases` folder.
+from `build` folder. New build will be create in `build/releases` folder.
 
 By default builder will minify javaScript files from `js` folder with [UglifyJS](http://marijnhaverbeke.nl/uglifyjs) (online). For build without minification run
 
