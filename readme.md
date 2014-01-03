@@ -65,6 +65,8 @@ Usage: `options.html`
 
 ### Package builder ###
 
+Make zip package ready to upload to Chrome Web Store.
+
 - check build version (from `manifest.json`)
 - files (folders) to ignore
 - javaScript minification (if you want)
