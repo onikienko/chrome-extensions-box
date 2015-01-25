@@ -73,6 +73,7 @@ window.addEventListener('load', function () {
                 case 'password':
                 case 'email':
                 case 'tel':
+                case 'number':
                     el.value = items[storage_name];
                     break;
 
