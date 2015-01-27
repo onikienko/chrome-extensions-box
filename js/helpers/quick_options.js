@@ -3,6 +3,8 @@
  * Read more on GitHub - https://github.com/onikienko/chrome-extensions-box
  */
 window.addEventListener('load', function () {
+    /*This event will dispatch as soon as options page will be ready*/
+    var event = new CustomEvent('optionsPageReady');
 
     function showMessage(msg) {
         var el = document.getElementById(msg === 'error' ? 'error' : 'success');
@@ -30,7 +32,7 @@ window.addEventListener('load', function () {
                 switch (el.type) {
                 case 'checkbox':
                     if (parseInt(items[storage_name], 10) === 1) {
-                        el.checked = 'checked';
+                        el.checked = true;
                     }
                     el.addEventListener('change', function () {
                         var val = {};
@@ -144,6 +146,9 @@ window.addEventListener('load', function () {
                 }
             }
         });
+
+        /* Options page is ready. Dispatch event */
+        document.dispatchEvent(event);
 
     });
 }, false);

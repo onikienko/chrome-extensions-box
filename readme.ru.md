@@ -190,6 +190,17 @@ Chrome Extensions Box `v0.1`
 
 ```
 
+После того, как хэлпер закончит работу над страницей опций, он отправит событие готовности страницы `optionsPageReady`,
+которое можно слушать следующим образом:
+
+```javaScript
+
+    document.addEventListener('optionsPageReady', function() {
+        /* Options page is ready. Write your code here */
+    });
+
+```
+
 В демо расширении [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo) можно посмотреть использование всех типов элементов. См. файлы `options.html` и `js/storage.js`.
 
 `quick_options.js` можно точно так же использовать для страницы `popup.html`.
