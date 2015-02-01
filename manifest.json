@@ -70,14 +70,12 @@
     // If you distribute your extension using the Chrome Web Store, the homepage URL defaults to the extension's own page
     "homepage_url": "http://path/to/homepage",
 
-    // Default  "spanning".    http://developer.chrome.com/extensions/manifest.html#incognito
+    // Default  "spanning".    http://developer.chrome.com/extensions/manifest/incognito
     "incognito": "spanning" or "split",
 
-    "intents": {
-        //  http://developer.chrome.com/extensions/manifest.html#intents
-    },
+    "input_components": ...,
 
-    //  http://developer.chrome.com/extensions/manifest.html#key
+    //  http://developer.chrome.com/extensions/manifest/key
     "key": "publicKey",
 
     "nacl_modules": [
@@ -87,7 +85,7 @@
         }
     ],
 
-    //   http://developer.chrome.com/extensions/manifest.html#offline_enabled
+    //   http://developer.chrome.com/extensions/manifest/offline_enabled
     "offline_enabled": false,
 
     "omnibox": {
@@ -105,50 +103,80 @@
     ],
 
     "requirements": {
-        //    http://developer.chrome.com/extensions/manifest.html#requirements
+        //    http://developer.chrome.com/extensions/manifest/requirements
     },
 
     //If you're hosting your own extension or app, you need to add the "update_url"
     //  http://developer.chrome.com/extensions/autoupdate.html
     "update_url": "http://path/to/updateInfo.xml",
 
-    //  http://developer.chrome.com/extensions/manifest.html#web_accessible_resources
+    //  http://developer.chrome.com/extensions/manifest/web_accessible_resources
     "web_accessible_resources": [
         "img/ext_icons/16.png"
     ],
 
     "sandbox": {
-        //  http://developer.chrome.com/extensions/manifest.html#sandbox
+        //  http://developer.chrome.com/extensions/manifest/sandbox
     },
 
     //############################################################################
-    //  http://developer.chrome.com/extensions/declare_permissions.html
+    //  https://developer.chrome.com/extensions/declare_permissions
     "permissions": [
         "http://*.google.com/*",
 //        "activeTab",
+        "alarms",
         "background",
         "bookmarks",
+        "browsingData",
         "chrome://favicon/",
         "clipboardRead",
         "clipboardWrite",
         "contentSettings",
         "contextMenus",
         "cookies",
+        "debugger",
+        "declarativeContent",
+        "declarativeWebRequest",
+        "desktopCapture",
+        "dns",
+        "documentScan",
+        "downloads",
 //        "experimental",
         "fileBrowserHandler",
+        "fileSystemProvider",
+        "fontSettings",
+        "gcm",
         "geolocation",
         "history",
+        "identity",
         "idle",
+        "idltest",
+        "infobars",
+        "location",
         "management",
+        "nativeMessaging",
+        "notificationProvider",
         "notifications",
+        "pageCapture",
+        "power",
         "privacy",
+        "processes",
         "proxy",
+        "pushMessaging",
+        "sessions",
+        "signedInDevices",
         "storage",
+        "system.cpu",
+        "system.display",
+        "system.memory",
+        "system.storage",
+        "tabCapture",
         "tabs",
         "topSites",
         "tts",
         "ttsEngine",
         "unlimitedStorage",
+        "vpnProvider",
         "webNavigation",
         "webRequest",
         "webRequestBlocking"
