@@ -1,5 +1,5 @@
 // NOTE: JSON standart does not allow comments. Remove them
-//Manifest Files - http://developer.chrome.com/extensions/manifest.html
+//Manifest Files - http://developer.chrome.com/extensions/manifest
 {
     "name": "__MSG_extName__",
     "description": "__MSG_extDescr__",
@@ -9,7 +9,7 @@
     // v. 22 - Alarms API and eventPage
     // v. 20 - storage API
     // v. 19 - browsing data API,  top sites API
-    //  http://developer.chrome.com/extensions/whats_new.html
+    //  http://developer.chrome.com/extensions/whats_new
     "minimum_chrome_version": "25",
     "default_locale": "en",
     "icons": {
@@ -41,13 +41,13 @@
 
     "background": {
         "scripts": ["js/storage.js", "js/background.js"],
-        // it's eventPage( http://developer.chrome.com/extensions/event_pages.html )
+        // it's eventPage( http://developer.chrome.com/extensions/event_pages )
         // Use 'true' for backgroundPage
         "persistent": false
     },
     "content_scripts": [
         {
-            //    http://developer.chrome.com/extensions/match_patterns.html
+            //    http://developer.chrome.com/extensions/match_patterns
             "matches": ["http://www.google.com/*"],
             "css": ["css/content_script.css"],
             "js": ["js/content_script.js"]
@@ -60,7 +60,7 @@
         "pageToOverride": "myPage.html"
     },
 
-    //   http://developer.chrome.com/extensions/contentSecurityPolicy.html
+    //   http://developer.chrome.com/extensions/contentSecurityPolicy
     "content_security_policy": "policyString",
 
     "file_browser_handlers": [
@@ -89,7 +89,7 @@
     "offline_enabled": false,
 
     "omnibox": {
-        //    http://developer.chrome.com/extensions/omnibox.html
+        //    http://developer.chrome.com/extensions/omnibox
         "keyword": "aString"
     },
     "plugins": [
@@ -107,7 +107,7 @@
     },
 
     //If you're hosting your own extension or app, you need to add the "update_url"
-    //  http://developer.chrome.com/extensions/autoupdate.html
+    //  http://developer.chrome.com/extensions/autoupdate
     "update_url": "http://path/to/updateInfo.xml",
 
     //  http://developer.chrome.com/extensions/manifest/web_accessible_resources
