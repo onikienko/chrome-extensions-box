@@ -1,0 +1,36 @@
+{
+    "extName": {
+        "message": "New Extension",
+        "description": "Ім'я додатку. Не перекладати"
+    },
+    "extDescr": {
+        "message": "Короткий опис додатку",
+        "description": "Короткий опис додатку"
+    },
+
+    "o_tabs_help": {
+        "message": "Допомога",
+        "description": "Ім'я вкладки. Префікс 'o_' вказує, що текст відноситься до options.html"
+    },
+    "o_tabs_main": {
+        "message": "Основні",
+        "description": "Ім'я вкладки"
+    },
+    "o_error": {
+        "message": "Помилка під час збереження налаштувань",
+        "description": "Повідомлення про помилку під час збереження налаштувань в storage"
+    },
+    "o_saved": {
+        "message": "Зміни збережені",
+        "description": "Сообщение о успешном сохранении настроек"
+    },
+
+    "p_optionsBtn": {
+        "message": "Налаштування",
+        "description": "Підказка для кнопки.  Префікс 'p_' вказує, що текст відноситься до popup"
+    },
+    "p_helpBtn": {
+        "message": "Допомога",
+        "description": "Підказка для кнопки"
+    }
+}

@@ -1,7 +1,7 @@
 {
     "extName": {
         "message": "New Extension",
-        "description": "do not translate extension name"
+        "description": "Do not translate extension name"
     },
     "extDescr": {
         "message": "Extension's description",
