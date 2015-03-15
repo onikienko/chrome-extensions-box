@@ -1,5 +1,5 @@
-Chrome Extensions Box `v0.1`
-===========================
+Chrome Extensions Box
+=====================
 
 Стартовый набор для создания расширений для браузера Google Chrome. Это именно набор (каркас, скелет, bootstrap), не фреймворк. Основная задача - быстрое развертывание расширения.
  
@@ -88,6 +88,7 @@ Chrome Extensions Box `v0.1`
 	        
 	    </header>	
 	</body>
+	</html>
 
 ```
 
@@ -120,10 +121,11 @@ Chrome Extensions Box `v0.1`
 
 	<body>
 	    <header>
-	        <img src="img/ext_icons/48.png" title="Мое расширение">
 	        <strong>Здесь будет описание моего расширения</strong>
-	    </header>	
+	        <img src="img/ext_icons/48.png" title="Мое расширение">
+	    </header>
 	</body>
+    </html>
 
 ```
 
@@ -321,5 +323,3 @@ Chrome Extensions Box `v0.1`
 	options.html
 	popup.html
 	manifest.json
-
-
