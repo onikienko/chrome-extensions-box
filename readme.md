@@ -34,10 +34,9 @@ Usage
 
 ###Start###
 
-1. Edit `manifest.json` file. Do not remove `storage permissions` - *Chrome Extensions Box uses* this API to save settings ([chrome.storage](https://developer.chrome.com/extensions/storage.html)).
+1. Edit `manifest.json` file. Do not remove `storage permissions` - *Chrome Extensions Box* uses this API to save settings ([chrome.storage](https://developer.chrome.com/extensions/storage.html)).
 `JSON` does not support comments. Del them.
-2. Del `_locales` folder if internationalization is not planned and edit the properties of `manifest.json` `name` and `description`.
-Will better to keep the internationalization support. *Chrome Extensions Box* has a helper simplifies the process.
+2. Del `_locales` folder if internationalization. Will better to keep the internationalization support. *Chrome Extensions Box* has a helper simplifies the process.
 3. Edit `js/storage.js` file specifying the type of storage that will be used. 
 
 Look at [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
@@ -65,8 +64,8 @@ In HTML instead of text place `{{propertyNameFromLocale}}`. See example:
 
 	<body>
 	    <header>
-			<strong>{{extDescr}}</strong>
-			<!--Also can use in attributes-->
+		<strong>{{extDescr}}</strong>
+		<!--Also can use in attributes-->
 	        <img src="img/ext_icons/48.png" title="{{extName}}">
 	    </header>
 	</body>
@@ -149,7 +148,7 @@ Run:
 
 	build.py
 
-from `build` folder. New build will be create in `build/releases` folder.
+from `build` folder. New release package will be create in `build/releases` folder. You can upload this package to Chrome Web Store.
 
 By default builder will minify javaScript files from `js` folder with [UglifyJS](http://marijnhaverbeke.nl/uglifyjs) (online). For build without minification run
 
