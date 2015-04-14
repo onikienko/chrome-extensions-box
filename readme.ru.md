@@ -138,7 +138,7 @@ Chrome Extensions Box
 
 Файл хелпера - `js/helpers/quick_options.js`.
 
-Поможет быстро создать страницу настроек расширения. Необходимо лишь указать настройки по умолчанию и тип хранилища.  
+Поможет быстро создать страницу настроек расширения. Необходимо лишь указать настройки по умолчанию и тип хранилища. (В  `js/storage.js`). 
 В `options.html` связать `storage` и `html` с помощью атрибутов `data-storage` и `value`.
 
 Первое, что нужно сделать - отредактировать файл `js/storage.js`. 
@@ -153,7 +153,7 @@ Chrome Extensions Box
 	var storage = {
 	    area: chrome.storage.sync,
 	    default_options: {
-	        select_el: 'select3' 
+	        sound_type: 'type3' 
 	    }
 	}; 
 
@@ -163,10 +163,12 @@ Chrome Extensions Box
 
 ```HTML
 	
-    <select data-storage="select_el">
-        <option value="select1">1</option>
-        <option value="select2">2</option>
-        <option value="select3">3</option> <!--будет выбран этот элемент списка-->
+	// связывание SELECT с storage `sound_type` через атрибут `data-storage`
+    <select data-storage="sound_type">
+        <option value="type1">1</option>
+        <option value="2">type2</option>
+        <!--будет выбран этот элемент списка, т.к. value="type3" указан в default_options-->
+        <option value="type3">3</option> 
     </select>
 
 ```
@@ -183,8 +185,6 @@ Chrome Extensions Box
 Если у элемента указан `data-storage`, в хранилище выполняется поиск свойства с таким именем и состояние элемента выставляется в соответствии со значениями.  
 
 Для `input type="checkbox"` атрибут `value` игнорируется. Для отмеченного чекбокса используйте значени 1, для отключенного - 0 (`integer`)
-
-`input type="number"` не поддерживается.
 
 Для `<select multiple>` нужно указывать массив строковых значений.
 
@@ -227,7 +227,8 @@ Chrome Extensions Box
 
 ```
 
-В демо расширении [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo) можно посмотреть использование всех типов элементов. См. файлы `options.html` и `js/storage.js`.
+В демо расширении [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo) можно посмотреть использование всех типов элементов. 
+См. файлы `options.html` и `js/storage.js`.
 
 `quick_options.js` можно точно так же использовать для страницы `popup.html`.
 

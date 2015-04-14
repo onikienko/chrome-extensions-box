@@ -1,6 +1,6 @@
 Chrome Extensions Box
 =====================
-[Русская документация](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md) более полная в данный момент.
+[Русская документация](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md).
 
 Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 
@@ -118,6 +118,119 @@ As you can see every `{{}}` were replaced with relevant messages from `_locales/
 
 Helper file - `js/helpers/quick_options.js`
 
+See [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo) to understand how it works.
+
+It helps quickly build options page. You have to specify default options and storage type in `js/storage.js`.
+In `options.html` bind `storage` and `html` with `data-storage` attributes.
+
+Firstly, you have to edit `js/storage.js`. 
+Specify `area` (`local` or `sync`) and extension options by default (`storage.default_options`). 
+
+See example:
+
+`js/storage.js`:
+
+```javaScript
+
+	var storage = {
+	    area: chrome.storage.sync, // save options to sync storage
+	    // default options
+	    default_options: {
+	        sound_type: 'type3' 
+	    }
+	}; 
+
+```
+
+`options.html`:
+
+```HTML
+	
+	// bind SELECT to storage `sound_type` with attr `data-storage`
+    <select data-storage="sound_type">
+        <option value="type1">1</option>
+        <option value="type2">2</option>
+        <!-- this select will be selected because value="type3" was specified in default_options -->
+        <option value="type3">3</option> 
+    </select>
+
+```
+
+In `js/storage.js` specified storage type and default option. 
+After extension installation this default option will write to specified storage.
+There is SELECT in `options.html` with `data-storage` attribute with *name* of option.
+Script `js/helpers/quick_options.js` will analyze HTML, find TAGs with `data-storage` (SELECT in this case), 
+find in storage variable with that name (`sound_type`), find `option` tag with `value` attribute 'type3' and select it.
+
+In addition, for this SELECT will created event handler which will write every change in storage and
+show message for the user. (*Option saved*).
+
+For `input type="checkbox"` *value* attribute is ignored. For checked checkbox use 1, for unchecked - 0.
+
+```javaScript
+
+	var storage = {
+	    area: chrome.storage.sync, // save options to sync storage
+	    // default options
+	    default_options: {
+	        remember_me: 1,
+	        show_hints: 0
+	    }
+	}; 
+
+```
+
+`options.html`:
+
+```HTML
+	
+	<!-- after installation this checkbox will checked  -->
+	<input type="checkbox" data-storage="remember_me">
+		
+	<!-- will unchecked -->
+	<input type="checkbox" data-storage="show_hints">
+
+```
+
+For `<select multiple>` you have to specify array of string values.
+
+For *text* inputs (like *text*, *password*, *tel*, *email*, *number*) and for `textarea` you have to add a button. 
+When user push the button, script will save new value to a storage. The button should have the same `data-storage` as input.
+
+```HTML
+	
+    <input type="text" data-storage="o_text"/>
+    <input type="submit" data-storage="o_text" value="Save"/>
+
+```
+
+After every save operation script will dispatch `optionSaved` event. You can listen it:
+
+```javaScript
+
+    document.addEventListener('optionSaved', function(event) {
+        console.log(event.detail);
+    });
+
+```
+
+`optionSaved` returns callback with `event.detail` object which contains info about status of saving operation and option which was saved.
+
+- `event.detail.success` true on success or false on error
+- `event.detail.val` object with saved option
+
+After helper finishes work with option page it will dispatch `optionsPageReady` event. You can listen it:
+
+```javaScript
+
+    document.addEventListener('optionsPageReady', function() {
+        /* Options page is ready. Write your code here */
+    });
+
+```
+
+Download and install this demo extension [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo).
+See `options.html` and `js/storage.js` files. Also see console print for Option page.
 
 ###Tabs###
 
