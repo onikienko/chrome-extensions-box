@@ -36,7 +36,7 @@ Usage
 
 1. Edit `manifest.json` file. Do not remove `storage permissions` - *Chrome Extensions Box* uses this API to save settings ([chrome.storage](https://developer.chrome.com/extensions/storage.html)).
 `JSON` does not support comments. Del them.
-2. Del `_locales` folder if internationalization. Will better to keep the internationalization support. *Chrome Extensions Box* has a helper simplifies the process.
+2. Del `_locales` folder if you don't plan internationalization. Will better to keep the internationalization support. *Chrome Extensions Box* has a helper simplifies the process.
 3. Edit `js/storage.js` file specifying the type of storage that will be used. 
 
 Look at [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
@@ -113,6 +113,7 @@ In result will have HTML:
 ```
 
 As you can see every `{{}}` were replaced with relevant messages from `_locales/en/message.json` file.
+
 
 ###Options page###
 
