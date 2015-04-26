@@ -15,9 +15,11 @@ Chrome Extensions Box
 - написано на чистом javaScript без jQuery и других библиотек (jQuery 2.x включен в сборку)
 
 
-Расширения использующие Chrome Extensions Box:
+Расширения (open source) использующие Chrome Extensions Box:
 
 - [tabHamster](https://github.com/onikienko/TabHamster)
+- [Dev extensions reload](https://github.com/onikienko/dev-extensions-reload)
+- [keygenjukebox play button](https://github.com/onikienko/keygenjukebox-play-button)
 
 Простое расширение, демонстрирующее возможности данного набора - [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
