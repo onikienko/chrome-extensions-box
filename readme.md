@@ -13,9 +13,11 @@ Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 - extension builder (automation release package creation)
 - written with no jQuery (but jQuery 2.x is attached)
 
-Extensions written with Chrome Extensions Box:
+Open source extensions written with Chrome Extensions Box:
 
 - [tabHamster](https://github.com/onikienko/TabHamster)
+- [Dev extensions reload](https://github.com/onikienko/dev-extensions-reload)
+- [keygenjukebox play button](https://github.com/onikienko/keygenjukebox-play-button)
 
 A simple extension [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo).
 Do nothing but demonstrates how *Chrome Extensions Box* works.
