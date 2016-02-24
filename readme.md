@@ -13,9 +13,11 @@ Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 - extension builder (automation release package creation)
 - written with no jQuery (but jQuery 2.x is attached)
 
-Extensions written with Chrome Extensions Box:
+Open source extensions written with Chrome Extensions Box:
 
 - [tabHamster](https://github.com/onikienko/TabHamster)
+- [Dev extensions reload](https://github.com/onikienko/dev-extensions-reload)
+- [keygenjukebox play button](https://github.com/onikienko/keygenjukebox-play-button)
 
 A simple extension [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo).
 Do nothing but demonstrates how *Chrome Extensions Box* works.
@@ -36,7 +38,7 @@ Usage
 
 1. Edit `manifest.json` file. Do not remove `storage permissions` - *Chrome Extensions Box* uses this API to save settings ([chrome.storage](https://developer.chrome.com/extensions/storage.html)).
 `JSON` does not support comments. Del them.
-2. Del `_locales` folder if you don't plan internationalization. Will better to keep the internationalization support. *Chrome Extensions Box* has a helper simplifies the process.
+2. Remove `_locales` folder if you don't plan internationalization. Will better to keep the internationalization support. *Chrome Extensions Box* has a helper simplifies the process.
 3. Edit `js/storage.js` file specifying the type of storage that will be used. 
 
 Look at [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
@@ -112,7 +114,7 @@ In result will have HTML:
 
 ```
 
-As you can see every `{{}}` were replaced with relevant messages from `_locales/en/message.json` file.
+As you can see each `{{}}` were replaced with relevant messages from `_locales/en/message.json` file.
 
 
 ###Options page###
@@ -163,7 +165,7 @@ There is SELECT in `options.html` with `data-storage` attribute with *name* of o
 Script `js/helpers/quick_options.js` will analyze HTML, find TAGs with `data-storage` (SELECT in this case), 
 find in storage variable with that name (`sound_type`), find `option` tag with `value` attribute 'type3' and select it.
 
-In addition, for this SELECT will created event handler which will write every change in storage and
+In addition, for this SELECT will created event handler which will write each changes in storage and
 show message for the user. (*Option saved*).
 
 For `input type="checkbox"` *value* attribute is ignored. For checked checkbox use 1, for unchecked - 0.
@@ -205,7 +207,7 @@ When user push the button, script will save new value to a storage. The button s
 
 ```
 
-After every save operation script will dispatch `optionSaved` event. You can listen it:
+After each save operation script will dispatch `optionSaved` event. You can listen it:
 
 ```javaScript
 
@@ -246,7 +248,7 @@ Usage: `options.html`
 
 ###Package builder###
 
-Make zip package ready to upload to Chrome Web Store.
+Make zip package ready to upload to Chrome Market.
 
 - check build version (from `manifest.json`)
 - files (folders) to ignore

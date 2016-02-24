@@ -15,9 +15,11 @@ Chrome Extensions Box
 - написано на чистом javaScript без jQuery и других библиотек (jQuery 2.x включен в сборку)
 
 
-Расширения использующие Chrome Extensions Box:
+Расширения (open source) использующие Chrome Extensions Box:
 
 - [tabHamster](https://github.com/onikienko/TabHamster)
+- [Dev extensions reload](https://github.com/onikienko/dev-extensions-reload)
+- [keygenjukebox play button](https://github.com/onikienko/keygenjukebox-play-button)
 
 Простое расширение, демонстрирующее возможности данного набора - [Chrome Extensions Box #DEMO](https://github.com/onikienko/chrome-extensions-box-Demo). 
 
@@ -179,7 +181,7 @@ Chrome Extensions Box
 Таким образом, в данном примере, будет выбран последний пункт.
 
 Также, к данному `select` будет добавлен обработчик события, который будет записывать все изменения в хранилище. 
-Если пользователь выберет второй пункт, то в хранилище будет записано: `select_el: 'select2'`
+Если пользователь выберет второй пункт, то в хранилище будет записано: `sound_type: 'type3'`
 
 Скрипт обрабатывает все элементы типа `input`, `textarea`, `select` на странице. 
 Если у элемента указан `data-storage`, в хранилище выполняется поиск свойства с таким именем и состояние элемента выставляется в соответствии со значениями.  
