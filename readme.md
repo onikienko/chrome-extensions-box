@@ -1,6 +1,6 @@
 Chrome Extensions Box
 =====================
-[Русская документация](https://github.com/onikienko/chrome-extensions-box/blob/master/readme.ru.md).
+**This kit is no longer supported and not recomended for use**
 
 Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 
