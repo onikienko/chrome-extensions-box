@@ -1,6 +1,6 @@
 Chrome Extensions Box
 =====================
-**This kit is no longer supported and not recomended for use**
+### ⚠️ This kit is no longer supported and not recomended for use
 
 Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 
