@@ -1,6 +1,9 @@
 Chrome Extensions Box
 =====================
-### ⚠️ This kit is no longer supported and not recomended for use
+### ⚠️ This kit is no longer supported and not recomended for use.
+### You may use [this modern template](https://github.com/onikienko/mv3-parcel-webext-template) instead.
+
+------------------------
 
 Starter kit for creating Google Chrome extensions. Quick start is the main goal.
 
